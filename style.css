@@ -1,0 +1,16 @@
+body{
+   background-color: blanchedalmond;
+
+}
+.main-container{
+   margin:10px 0px 0px 40px;
+   font-weight: bolder;  
+}
+table{
+   font-size: small;
+   width: min-content;
+}
+.gender-check-inline{
+   display: inline-block;
+
+}
