@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Updation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class ="main-container">
+        <form id ="form">
+            <div class="form-row d-flex justify-content-center col-md-8">
+              <div class="form-group col-md-10">
+                <h1 id="title">Update Form</h1>
+                <p id = "description">This is a Dom-Form updation. Please fill in all your details and update the form and please select minimum of two food choices</p>
+              </div>
+              
+                <div class="form-group col-md-5">
+                  <label for="inputEmail4">First Name</label>
+                  <input type="text" class="form-control" id="first-name" required placeholder="Enter First Name">
+                </div>
+
+                <div class="form-group col-md-5">
+                  <label for="inputPassword4">Last Name</label>
+                  <input type="lastname" class="form-control" id="last-name" required placeholder="Enter Last Name">
+                </div>
+
+              <div class="form-group col-md-10">
+                <label for="inputAddress">Address</label>
+                <textarea type="textarea" class="form-control" id="address" required placeholder="Enter Full Address"></textarea>
+              </div>
+             
+
+                <div class="form-group col-md-5">
+                  <label for="inputState">State</label>
+                  <input type="text" class="form-control" id="inputState" placeholder="Enter Your State">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <label for="inputCity">Country</label>
+                    <input type="text" class="form-control" id="inpuCountry" placeholder="Enter Your Country">
+                  </div>
+
+                <div class="form-group col-md-5">
+                  <label for="inputZip">Pincode</label>
+                  <input type="text" class="form-control" id="pincode" required placeholder="Enter Your Pincode">
+                </div>
+
+                <div class="form-group col-md-5">
+                  <p>Gender</p>
+                  <div class="gender-check-inline">
+                  <input type=radio value="Male" name="gender" required>
+                  <label>Male</label>
+                  </div>
+                  
+                  <div class="gender-check-inline" >
+                    <input type=radio value="Female" name="gender" required>
+                    <label>Female</label>
+                    </div>
+
+                 <div class="gender-check-inline">
+                  <input type=radio value="Other" name="gender" required>
+                  <label>Other</label>
+                  </div>
+                    
+                  </div>
+                <div class="form-group col-md-10">
+                    <label for="inputFood">Choice of Food:</label>
+                    <ul id="choice-food">
+                        <li><input class = "options" type="checkbox" value="Indian" id="options"> Indian</li>
+                        <li><input class = "options" type="checkbox" value="Thai" id="options"> Thai</li>
+                        <li><input class = "options" type="checkbox" value="Mexican" id="options"> Mexican</li>
+                        <li><input class = "options" type="checkbox" value="Italian" id="options"> Italian</li>
+                        <li><input class = "options" type="checkbox" value="Chinese" id="options"> Chinese</li>
+                    </ul>
+                </div>
+
+                <div class="form-group col-md-10">
+                    <button type="button" class="btn btn-dark" id="btn">Update</button>
+                </div>
+
+                <div class="form-group col-md-10">
+                  <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+              </div>
+                
+              <div class="form-group col-md-10">
+                <table class="table" border="1" cellspacing="0" cellpadding="">
+                  <thead class="thead-dark" id="table-head">
+                    <tr>
+                      <th scope="col">FirstName</th>
+                      <th scope="col">LastName</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">State</th>
+                      <th scope="col">Country</th>
+                      <th scope="col">Pincode</th>
+                      <th scope="col">Gender</th>
+                      <th scope="col">Food</th>
+                     </tr>
+                  </thead>
+                  <tbody id="table-body">
+
+                  </tbody>
+                </table>
+              </div>
+
+              </div>
+        </form>
+        <p id = "demo"></p>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+</body>
+</html>
